@@ -13,7 +13,11 @@ class MyThread extends Thread{
 	}
 	
 	public void run(){
-		
+		for(;;){
+			System.out.println(init+" ");
+			init += increment;
+			sleep(delay);		
+		}
 	}
 }
 
