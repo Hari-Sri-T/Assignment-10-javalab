@@ -24,9 +24,8 @@ class MyThread extends Thread{
 class Main
 {
 	public static void main(String args[]){
-		//MyThread t = new MyThread();
-		//t.start();
-		
-		new Thread (new MyThread()).start();
+		new MyThread(1,3,3000).start();
+		new MyThread(100,50,1000).start();
+
 	}
 }
